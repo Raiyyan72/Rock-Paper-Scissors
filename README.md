@@ -50,3 +50,15 @@ A simple, interactive, and fun game built with **HTML, CSS, and JavaScript** whe
 ---
 
 ## 📂 File Structure
+rock-paper-scissors/
+├── index.html # Main HTML file
+├── style.css # Game styling
+├── rock.js # JavaScript logic
+├── assets/
+│ ├── rock.png
+│ ├── paper.png
+│ ├── scissors.png
+│ ├── winsound.mp3
+│ ├── losesound.mp3
+│ ├── drawsound.mp3
+│ └── pubg-theme.mp3
