@@ -2,10 +2,10 @@ let userscore = 0;
 let compscore = 0;
 let msg = document.querySelector("#msg");
 
-const winsound = new Audio("assets/winsound.mp3");
-const drawsound = new Audio("assets/drawsound.mp3");
-const clicksound = new Audio("assets/click-sound.mp3");
-const losesound = new Audio("assets/losesound.mp3");
+const winsound = new Audio("winsound.mp3");
+const drawsound = new Audio("drawsound.mp3");
+const clicksound = new Audio("click-sound.mp3");
+const losesound = new Audio("losesound.mp3");
 
 const openingPage = document.getElementById("opening-page");
 const gamePage = document.getElementById("game-page");
