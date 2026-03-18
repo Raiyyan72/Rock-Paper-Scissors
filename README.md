@@ -19,15 +19,7 @@ A simple, interactive, and fun game built with **HTML, CSS, and JavaScript** whe
 
 ---
 
-## 🎨 Screenshots
 
-![Start Screen](assets/screenshot-start.png)  
-*Start page with gradient background*
-
-![Game Screen](assets/screenshot-game.png)  
-*Gameplay screen with choices, scores, and message*
-
----
 
 ## ⚡ How to Play
 
