@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body{
+    background-color: #EAE0D5;
+}
+
+#h1{
+    background-color: #22333B;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+/* choices container */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.choice:hover{
+    background-color: #22333B;
+    cursor: pointer;
+      transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.choice:active {
+    transform: scale(0.95);
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius:50%;
+}
+/* Exit button  */
+#exit-btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    width: 140px;
+    height: 40px;           
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF4C4C;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;   
+   margin-left: 10px;
+   margin-top: 2px;       
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+/* Hover effect */
+#exit-btn:hover {
+    background-color: #FF0000;
+    transform: scale(1.05);
+}
+
+/* Medium screen <=900px */
+@media (max-width: 900px) {
+    #exit-btn {
+        width: 80px;
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+/* Mobile <=600px */
+@media (max-width: 600px) {
+    #exit-btn {
+        width: 80px;
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+}
+
+/* Large screen >=1400px */
+@media (min-width: 1400px) {
+    #exit-btn {
+        width: 80px;
+        font-size: 20px;
+        padding: 12px 30px;
+    }
+}
+/* score bord */
+
+.score-bord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.score{
+    font-size: xx-large;
+}
+
+#score-you,#comp-score{
+    font-size: 4rem;
+}
+
+/* message */
+
+#msg{
+    background-color: #C6AC8F;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.msg-container{
+   margin-top: 5rem;
+}
+
+.create{
+   margin-top: 5rem;
+}
+
+.create:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.div{
+    background-color: #0A0908;
+    font-size: 1rem;
+    color: #fff;
+    display:inline-block;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin-top: 75px;
+}
+
+
+#button{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background-color:#5E503F;
+    top: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transform:scale(0.95) ;
+    transition: all 0.2s ease;
+
+}
+#button:hover{
+   transform: scale(1.1);
+    background-color: #a68a64;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+#opening-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); /* gradient bg */
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#opening-page h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+#opening-page p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+#start-game-btn {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: #ff6f61;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#start-game-btn:hover {
+    transform: scale(1.1);
+    background: #ff3b2e;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+#musicbtn{
+    position: relative;
+    left: 45%;
+    right: auto;
+    top: 1rem;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #0A0908;
+    color: #fff;
+    border: 1px solid black;
+     transform:scale(0.95) ;
+    transition: all 0.2s ease;
+
+}
+#musicbtn:hover{
+    transform: scale(1);
+    background-color: #1a1a1a;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* music button media query */
+
+/* Medium screens <=900px */
+@media (max-width: 900px) {
+    #musicbtn {
+        left: 40%;     
+        width: 90px;
+        height: 22px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile screens <=600px */
+@media (max-width: 600px) {
+    #musicbtn {
+        left: 35%;      
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+/* Large screens >=1400px */
+@media (min-width: 1400px) {
+    #musicbtn {
+        left: 46%;      
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 900px){
+
+.container{
+    gap:40px;
+}
+
+.choice{
+    height:130px;
+    width:130px;
+}
+
+img{
+    height:115px;
+    width:115px;
+}
+
+#score-you,#comp-score{
+    font-size:3rem;
+}
+
+#msg{
+    font-size:1.6rem;
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px){
+
+h1{
+    font-size:1.5rem;
+}
+
+.container{
+    gap:25px;
+}
+
+.choice{
+    height:100px;
+    width:100px;
+}
+
+img{
+    height:90px;
+    width:90px;
+}
+
+.score-bord{
+    gap:2rem;
+}
+
+#score-you,#comp-score{
+    font-size:2.5rem;
+}
+
+#msg{
+    font-size:1.2rem;
+}
+
+}
+
+/* LARGE SCREEN */
+
+@media (min-width:1400px){
+
+.container{
+    gap:120px;
+}
+
+.choice{
+    height:200px;
+    width:200px;
+}
+
+img{
+    height:180px;
+    width:180px;
+}
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="bgmusic" src="assets/pubg-theme.mp3" loop></audio>
+</head>
+<body>
+    <!-- Start page -->
+    <div id="opening-page">
+  <h1 >Rock Paper Scissors</h1>
+  <p>Click the button to start the game!</p>
+  <button id="start-game-btn">Start Game</button>
+   <div class="create">
+        <p class="div">Created By:-Raiyyan khan</p>
+    </div>
+</div>
+<div id="game-page" style="display:none;">
+    <h1  id="h1">Rock Paper Scissors</h1>
+    <button id="exit-btn">Exit</button>
+    <button id="musicbtn">Pause music</button>
+    <div class="container">
+        <div class="choice" id="rock">
+            <img src="assets/rock.png" alt="Rock image">
+        </div>
+        <div class="choice" id="paper">
+            <img src="assets/paper.png" alt="paper image">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="assets/scissors.png" alt="Scissors image">
+        </div>
+    </div>
+    <div class="score-bord">
+        <div class="score">
+            <p id="score-you">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+    <button id="button">Reset Game</button>
+    <script src="rock.js"></script>
+</div>
+</body>
+</html>
