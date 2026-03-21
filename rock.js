@@ -148,7 +148,7 @@ exitBtn.addEventListener("click", () => {
     // Show opening/start page
     openingPage.style.display = "block";
 
-    //reset game scores
+    //reset game scores.
     resetbtn();
     userscorepra.innerText = userscore;
     compscorepra.innerText = compscore;
