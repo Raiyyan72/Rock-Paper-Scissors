@@ -104,7 +104,6 @@ choices.forEach((choice)=>{
 
 
         const userchoice = choice.getAttribute("id");
-        console.log("User Choice = " , userchoice)
         playgame(userchoice);
     })
 })
