@@ -48,8 +48,6 @@ const gencompchoice = ()=>{
 const drawgame = ()=>{
      drawsound.currentTime = 0;
     drawsound.play();
-
-    console.log("Match Draw:")
     msg.innerText = "Match was Draw , Play once again:"
      msg.style.backgroundColor= "#ADD8E6";
 }
@@ -62,7 +60,6 @@ const showwinner = (userwin , userchoice,compchoice)=>{
         winsound.currentTime = 0;
     winsound.play();
 
-        console.log("You Win!");
         msg.innerText =`You win! Your ${userchoice} Beats ${compchoice}`;
         msg.style.backgroundColor= "green";
         }else{
@@ -70,7 +67,6 @@ const showwinner = (userwin , userchoice,compchoice)=>{
             losesound.play();
             compscore++;
             compscorepra.innerText = compscore;
-        console.log("You Lose!");
          msg.innerText =`You Lost! ${compchoice} Beats Your ${userchoice}:`;
          msg.style.backgroundColor= "Red";
     }
@@ -79,7 +75,6 @@ const showwinner = (userwin , userchoice,compchoice)=>{
 
 const playgame = (userchoice)=>{
     const compchoice = gencompchoice();
-    console.log("comp choice=",compchoice);
 
     if(userchoice === compchoice){
         drawgame();
@@ -102,6 +97,10 @@ choices.forEach((choice)=>{
     choice.addEventListener("click",()=>{
          clicksound.currentTime = 0; 
         clicksound.play();
+        
+ losesound.pause();
+    drawsound.pause();
+    winsound.pause();
 
 
         const userchoice = choice.getAttribute("id");
@@ -111,7 +110,6 @@ choices.forEach((choice)=>{
 })
 
 button.addEventListener("click",()=>{
-    console.log("Button is cilcked")
     resetbtn();
      userscorepra.innerText = userscore;
     compscorepra.innerText = compscore;
@@ -159,7 +157,7 @@ exitBtn.addEventListener("click", () => {
     msg.innerText = "Welcome! Click Start to play.";
     msg.style.backgroundColor = "#C6AC8F"; // or any default color
 
-    // stop background music
+   
     bgmusic.pause();
     bgmusic.currentTime = 0;
     musicbtn.innerText = "Play Music";
