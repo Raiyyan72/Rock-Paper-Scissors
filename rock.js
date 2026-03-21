@@ -155,7 +155,7 @@ exitBtn.addEventListener("click", () => {
 
     // Reset message
     msg.innerText = "Welcome! Click Start to play.";
-    msg.style.backgroundColor = "#C6AC8F"; // or any default color
+    msg.style.backgroundColor = "#C6AC8F"; 
 
    
     bgmusic.pause();
